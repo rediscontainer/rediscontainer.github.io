@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+<title>Image searching engine</title>
+<link rel="shortcut icon" href="">
+
+
+<!-- CSS -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://unpkg.com/nprogress@0.2.0/nprogress.css" rel="stylesheet">
+<link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css" rel="stylesheet" >
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" >
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+<script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+
+
+
+
+</head>
+<body class="blue-grey lighten-5">
+
+<div class="index-container">
+    <div class="">
+        <div class="row">
+            <div class="input-field col s12 center-align">
+                <a class="waves-effect waves-light btn ">正しい</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s2 center-align">
+                <a class="waves-effect waves-light btn  contorol-button yellow darken-2">誤検知</a>
+            </div>
+            <div class="col s8 center-align" id="img-content">
+                <span id="fname" class="hide">my-filename</span>
+                <img class="responsive-img" :src="url" />
+            </div>
+            <div class="col s2 center-align">
+                <a class="waves-effect waves-light btn contorol-button red">未検知</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<dic class="container">
+    <input type="file" class="filepond" name="filepond">
+</div>
+
+</body>
+</html>
